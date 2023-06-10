@@ -24,6 +24,6 @@
 
 ---
 
-![Game](https://avs-2307.github.io/Events_Goblin/)
+[Game](https://avs-2307.github.io/Events_Goblin/)
 
 ![CI](https://github.com/AVS-2307/Events_Goblin/actions/workflows/web.yml/badge.svg)
