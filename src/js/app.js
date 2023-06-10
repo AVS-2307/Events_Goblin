@@ -1,9 +1,17 @@
-import Board from "./Board";
-import Goblin from "./Goblin";
-import GamePlay from "./GamePlay";
+import GameGoblin from './game';
 
-const board = new Board();
-const char = new Goblin();
-const gameplay = new GamePlay(board, char);
+console.log('app started');
 
-gameplay.init();
+const app = new GameGoblin();
+
+app.renderApp();
+
+const completeField = Array.from(document.querySelectorAll('.game-cell'));
+
+app.getRandomPicture(completeField);
+
+setInterval(() => {
+  app.getRandomPicture(completeField);
+}, 1500);
+
+app.gameClick(completeField);

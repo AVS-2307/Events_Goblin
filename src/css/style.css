@@ -1,53 +1,36 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  background-color: rgb(27, 26, 26);
+    color: #999;
 }
 
-.title {
-  text-align: center;
-  font-size: 2em;
-  color: #fff;
+#game {
+    display: flex;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(9, 92, 60);
+    flex-wrap: wrap;
 }
 
-.board {
-  display: flex;
-  flex-wrap: wrap;
-  width: 70vmin;
-  height: 70vmin;
-  border: 1px solid rgb(10, 10, 10);
-  margin: 0 auto;
-  background-color: rgb(12, 171, 62);
+.game-cell {
+    width: 98px;
+    height: 98px;
+    border: 1px solid white;
 }
 
-.cell {
-  width: 25%;
-  height: 25%;
-  box-sizing: border-box;
-  border: 2px solid black;
+.picture {
+    background-image: url('../img/goblin.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.hammer {
-  cursor: url("../img/hammer.png"), auto;
-}
-.hammer-boom {
-  cursor: url("../img/hammer-boom.png"), auto;
+.cursor {
+    cursor: url('../img/bam.png'), auto;
 }
 
-.goblin {
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/goblin.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.status {
-  width: 30vmin;
-  border: 1px solid black;
-  margin: 15px auto;
-  background-color: #fff;
+.points {
+    width: 400px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
 }
